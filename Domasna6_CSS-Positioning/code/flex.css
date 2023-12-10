@@ -1,0 +1,352 @@
+/* * {
+    margin: 0px;
+    padding: 0px;
+}
+
+.slika1 {
+    margin: 8px;
+    border: 5px solid #453A36;
+    width: 450px;
+    height: 450px;
+}
+
+.beige1 {
+    position: absolute;
+    background-color: #FEF9E6;
+    border-right: 10px solid #453A36;
+    border-bottom: 20px solid #453A36;
+    width: 110px;
+    height: 130px;
+    top: 13;
+}
+
+.beige2 {
+    position: absolute;
+    background-color: #FEF9E6;
+    border-right: 10px solid #453A36;
+    border-bottom: 1px solid #453A36;
+    width: 110px;
+    height: 170px;
+    top: 163px;
+}
+
+.blue {
+    position: absolute;
+    background-color: #409CC5;
+    border-right: 10px solid #453A36;
+    border-top: 10px solid #453A36;
+    width: 110px;
+    height: 119px;
+    top: 334px;
+}
+
+.red {
+    position: absolute;
+    background-color: #EC4938;
+    border-bottom: 8px solid #453A36;
+    width: 330px;
+    height: 323px;
+    left: 133px;
+    top: 13px;
+}
+
+.beige3 {
+    position: absolute;
+    background-color: #FEF9E6;
+    border-right: 10px solid #453A36;
+    width: 300px;
+    height: 119px;
+    left: 133px;
+    top: 344px;
+}
+
+.beige4 {
+    position: absolute;
+    background-color: #FEF9E6;
+    border-bottom: 19px solid #453A36;
+    width: 20px;
+    height: 50px;
+    left: 443px;
+    top: 344px;
+}
+
+.yellow {
+    position: absolute;
+    background-color: #FFFF00;
+    width: 20px;
+    height: 50px;
+    left: 443px;
+    top: 413px;
+} */
+
+.slika1 {
+    margin: 8px;
+    border: 5px solid #453A36;
+    display: flex;
+    width: 450px;
+    height: 450px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.beige1 {
+    background-color: #FEF9E6;
+    height: 35%;
+    border-right: 2px solid #453A36;
+    border-bottom: 15px solid #453A36;
+}
+
+.beige2 {
+    background-color: #FEF9E6;
+    height: 40%;
+    border-right: 2px solid #453A36;
+    border-bottom: 10px solid #453A36;
+    border-top: 5px solid #453A36;
+}
+
+.blue {
+    background-color: #409CC5;
+    height: 25%;
+    border-right: 2px solid #453A36;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+.red {
+    background-color: #EC4938;
+    height: 75%;
+    border-left: 8px solid #453A36;
+}
+
+.bottom {
+    display: flex;
+    height: 25%;
+}
+
+.beige3 {
+    background-color: #FEF9E6;
+    width: 96%;
+    border-left: 8px solid #453A36;
+    border-top: 8px solid #453A36;
+}
+
+.right2 {
+    display: flex;
+    flex-direction: column;
+    width: 4%;
+    border-left: 10px solid #453A36;
+}
+
+.beige4 {
+    background-color: #FEF9E6;
+    height: 50%;
+    border-top: 8px solid #453A36;
+    border-bottom: 8px solid #453A36;
+}
+
+.yellow {
+    background-color: #FFFF00;
+    height: 50%;
+    border-top: 8px solid #453A36;
+}
+
+
+
+/* -------------Bonus------------- */
+.b-bonus {
+    display: flex;
+    background-color: blueviolet;
+    width: 500px;
+    height: 500px;
+}
+
+.b-left {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+}
+
+.b-top {
+    display: flex;
+    height: 10%;
+    border-bottom: 10px solid black;
+}
+.b-top-1 {
+    width: 28%;
+    background-color: #E5EEEB;
+    border-right: 10px solid black;
+}
+.b-top-2 {
+    width: 40%;
+    background-color: #F2E7D5;
+}
+.b-top-3 {
+    width: 32%;
+    background-color: #F2C968;
+    border-left: 10px solid black;
+}
+
+.b-bottom {
+    display: flex;
+    height: 90%;
+}
+
+.b-left2 {
+    display: flex;
+    flex-direction: column;
+    border-right: 10px solid black;
+    width: 13%;
+}
+.b-left2-1 {
+    background-color: #FBFDE7;
+    border-bottom: 10px solid black;
+    height: 30%;
+}
+.b-left2-2 {
+    background-color: #E1EAE5;
+    border-bottom: 10px solid black;
+    height: 44%;
+}
+.b-left2-3 {
+    background-color: #F4C65A;
+    height: 26%;
+}
+
+.b-right2 {
+    display: flex;
+    flex-direction: column;
+    width: 88%;
+}
+
+.b-right2-top {
+    display: flex;
+    height: 63%;
+}
+.b-right2-top-left {
+    background-color: #D62D24;
+    width: 63%;
+    border-right: 10px solid black;
+    border-bottom: 10px solid black;
+}
+.b-right2-top-right {
+    display: flex;
+    flex-direction: column;
+    width: 37%;
+}
+.b-right2-top-right-top {
+    background-color: #EDCC6B;
+    border-bottom: 10px solid black;
+    height: 50%;
+}
+.b-right2-top-right-bottom {
+    display: flex;
+    height: 50%;
+    border-bottom: 10px solid black;
+}
+.b-right2-top-right-bottom-left {
+    background-color: #DFE5D0;
+    border-right: 10px solid black;
+    width: 50%;
+}
+.b-right2-top-right-bottom-right {
+    background-color: #F2EEE2;
+    width: 50%;
+}
+
+.b-right2-bottom {    
+    display: flex;
+    height: 37%;
+}
+.b-right2-bottom-left {
+    display: flex;
+    flex-direction: column;
+    width: 31.5%;
+    border-right: 10px solid black;
+}
+.b-right2-bottom-left-top {
+    background-color: #130409;
+    height: 63%;
+    border-bottom: 10px solid black;
+}
+.b-right2-bottom-left-bottom {
+    background-color: #E3DED9;
+    height: 37%;
+}
+
+.b-right2-bottom-right {
+    display: flex;
+    flex-direction: column;
+    width: 68.5%;
+}
+.b-right2-bottom-right-top {
+    display: flex;
+    height: 90%;
+}
+
+.b-right2-bottom-right-top-left {
+    display: flex;
+    flex-direction: column;
+    border-right: 10px solid black;
+    width: 44%;
+}
+._1 {
+    background-color: #C0BFBA;
+    height: 40%;
+    border-bottom: 10px solid black;
+}
+._2 {
+    background-color: #DEE2D4;
+    height: 40%;
+    border-bottom: 10px solid black;
+}
+._3 {
+    background-color: #0B0205;
+    height: 20%;
+}
+
+.b-right2-bottom-right-top-right {
+    display: flex;
+    flex-direction: column;
+    width: 56%;
+}
+._4 {
+    background-color: #D6DEE0;
+    border-bottom: 10px solid black;
+    height: 37%;
+}
+._5 {
+    background-color: #241785; 
+    height: 63%;   
+}
+
+.b-right2-bottom-right-bottom {
+    background-color: #E0E0DF;
+    height: 10%;
+    border-top: 10px solid black;
+}
+
+.b-right {
+    display: flex;
+    flex-direction: column;
+    border-left: 10px solid black;
+    width: 5%;
+}
+
+.b-right-top {    
+    background-color: #FCFDE7;
+    border-bottom: 10px solid black;
+    height: 80%;
+}
+
+.b-right-bottom {    
+    background-color: #D73630;
+    height: 20%;
+}

@@ -1,0 +1,180 @@
+.slika1 {
+    margin: 8px;
+    border: 5px solid #453A36;
+    display: grid;
+    grid-template-columns: 9fr 24fr 2fr;
+    grid-template-rows: 7fr 11fr 3fr 3fr;
+    width: 450px;
+    height: 450px;
+    grid-template-areas:
+        "bez crv crv"
+        "bez2 crv crv"
+        "plav bez3 bez4"
+        "plav bez3 zolt";
+}
+
+.item1 {
+    background-color: #FEF9E6;
+    grid-area: bez;
+    border-right: 5px solid #453A36;
+}
+
+.item2 {
+    background-color: #EC4938;
+    grid-area: crv;
+    border-left: 5px solid #453A36;
+    border-bottom: 8px solid #453A36;
+}
+
+.item3 {
+    background-color: #FEF9E6;
+    grid-area: bez2;
+    border-right: 5px solid #453A36;
+    border-top: 20px solid #453A36;
+    border-bottom: 10px solid #453A36;
+}
+
+.item4 {
+    background-color: #409CC5;
+    grid-area: plav;
+    border-right: 5px solid #453A36;
+}
+
+.item5 {
+    background-color: #FEF9E6;
+    grid-area: bez3;
+    border-left: 5px solid #453A36;
+}
+
+.item6 {
+    background-color: #FEF9E6;
+    grid-area: bez4;
+    border-bottom: 10px solid #453A36;
+    border-left: 10px solid #453A36;
+}
+
+.item7 {
+    background-color: #FFFF00;
+    grid-area: zolt;
+    border-top: 10px solid #453A36;
+    border-left: 10px solid #453A36;
+}
+
+/* ==========Bonus========= */
+.bonus {
+    display: grid;
+    background-color: black;
+    grid-template-columns: 1fr 1fr 1fr 2fr 1fr 1fr 0.5fr;
+    grid-template-rows: 1fr 2.3fr 2.3fr 1fr 1fr 0.5fr 0.5fr;
+    width: 500px;
+    height: 500px;
+    gap: 10px;
+    grid-template-areas:
+        "gray gray peach peach ochre ochre whitish"
+        "whitish2 red red red ochre2 ochre2 whitish"
+        "gray2 red red red gray3 gray4 whitish"
+        "gray2 brown brown gray5 gray6 gray6 whitish"
+        "ochre3 brown brown gray7 navy navy red2"
+        "ochre3 gray8 gray8 brown2 navy navy red2"
+        "ochre3 gray8 gray8 gray9 gray9 gray9 red2";
+}
+
+.item01 {
+    background-color: #E5EEEB;
+    grid-area: gray;
+}
+
+.item02 {
+    background-color: #F2E7D5;
+    grid-area: peach;
+}
+
+.item03 {
+    background-color: #F2C968;
+    grid-area: ochre;
+}
+
+.item04 {
+    background-color: #FCFDE7;
+    grid-area: whitish;
+}
+
+.item05 {
+    background-color: #FBFDE7;
+    grid-area: whitish2;
+}
+
+.item06 {
+    background-color: #D62D24;
+    grid-area: red;
+}
+
+.item07 {
+    background-color: #EDCC6B;
+    grid-area: ochre2;
+}
+
+.item08 {
+    background-color: #E1EAE5;
+    grid-area: gray2;
+}
+
+.item09 {
+    background-color: #DFE5D0;
+    grid-area: gray3;
+}
+
+.item010 {
+    background-color: #F1EEE1;
+    grid-area: gray4;
+}
+
+.item011 {
+    background-color: #130409;
+    grid-area: brown;
+}
+
+.item012 {
+    background-color: #C0BFBA;
+    grid-area: gray5;
+}
+
+.item013 {
+    background-color: #D6DEE0;
+    grid-area: gray6;
+}
+
+.item014 {
+    background-color: #F4C65A;
+    grid-area: ochre3;
+}
+
+.item015 {
+    background-color: #DEE2D4;
+    grid-area: gray7;
+}
+
+.item016 {
+    background-color: #241785;
+    grid-area: navy;
+}
+
+.item017 {
+    background-color: #D73530;
+    grid-area: red2;
+}
+
+.item018 {
+    background-color: #E2DED9;
+    grid-area: gray8;
+}
+
+.item019 {
+    background-color: #0B0205;
+    grid-area: brown2;
+}
+
+.item020 {
+    background-color: #E0E0DF;
+    grid-area: gray9;
+}
