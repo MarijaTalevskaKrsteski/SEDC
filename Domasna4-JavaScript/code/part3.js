@@ -16,7 +16,7 @@ function atm(cash) {
     }
 }
 
-let f = atm(cash);
+let resultFunction = atm(cash);
 
-if (f !== false)
-    console.log(`Old ammount: $${account}. Withdrawn ammount: $${cash}. New ammount: $${f}.`);
+if (resultFunction !== false)
+    console.log(`Old ammount: $${account}. Withdrawn ammount: $${cash}. New ammount: $${resultFunction}.`);
