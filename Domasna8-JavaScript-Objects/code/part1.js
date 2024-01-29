@@ -7,14 +7,14 @@
 
 let myButton = document.getElementById("submit");
 
-myButton.addEventListener("click", function() {
+function animal() {
     let nameAnimal = document.getElementById("name").value;
     let kindAnimal = document.getElementById("kind").value;
     let speakAnimal = document.getElementById("speak").value;
 
-    if ((nameAnimal || kindAnimal || speakAnimal) === "") {
+    if (nameAnimal === "" || kindAnimal === "" || speakAnimal === "") {
         alert("Please insert data in the text box!");
-        return false; 
+        return; 
     }
 
     let animal = {
@@ -26,4 +26,6 @@ myButton.addEventListener("click", function() {
     }
 
     animal.speak(speakAnimal);
-})
+}
+
+myButton.addEventListener("click", animal);

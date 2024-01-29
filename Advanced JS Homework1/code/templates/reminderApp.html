@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced JS - Homework #1 - Remider App</title>
+</head>
+<body>
+    <h1>Advanced JS - Homework #1 - Remider App</h1>
+
+    <form id="form">
+        <label for="title">Enter title:</label> <br />
+        <input type="text" name="title" id="title" /> <br /><br />
+
+        <label for="priority">Enter priority:</label> <br />
+        <select name="priority" id="priority">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+        </select> <br /><br />        
+
+        <label for="color">Color:</label> <br />
+        <input type="color" id="color" name="vcolor" value="#778899" />  <br /><br />
+
+        <label for="description">Add description</label> <br />
+        <textarea name="description" id="description" cols="30" rows="5"></textarea> <br /><br />
+
+        <button id="addReminder">Add Reminder</button>
+        <button id="showAll">Show All</button>
+    </form>
+    <br />
+    <div id="tableDiv"></div>
+
+    <script src="../src/reminderApp.js"></script>
+</body>
+</html>

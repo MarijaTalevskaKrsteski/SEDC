@@ -5,30 +5,33 @@
 
 let myButton = document.getElementById("submit");
 
-myButton.addEventListener("click", function() {
+myButton.addEventListener("click", function() {    
     let titleBook = document.getElementById("title").value;
     let authorBook = document.getElementById("author").value;
     let statusBook = document.getElementById("status").value;
 
-    if ((titleBook || authorBook) === "") {
+    if(titleBook === "" || authorBook ==="") {
         alert("Please insert data in the text box!");
-        return false; 
+        return;
     }
 
-    let book = {
-        title: titleBook,
-        author: authorBook,
-        readingStatus: statusBook,
-        info: function() {
-          if (this.readingStatus === "read") {
+    let newBook = new readBook(titleBook, authorBook, statusBook);
+    newBook.info();
+    document.getElementById("title").value = "";
+    document.getElementById("author").value = "";
+    document.getElementById("status").value = "read";      
+})
+
+let readBook = function(title, author, status) {
+    this.title = title,
+    this.author = author,
+    this.readingStatus = status;
+    this.info = function() {
+        if (this.readingStatus === "read") {
             console.log(`Already ${this.readingStatus} '${this.title}' by ${this.author}`);
             return true;
         } else {
             console.log(`You still need ${this.readingStatus} '${this.title}' by ${this.author}`);
             return false; }
-        }
     }
-    book.info();
-    document.getElementById("title").value = "";
-    document.getElementById("author").value = "";
-})
+}
