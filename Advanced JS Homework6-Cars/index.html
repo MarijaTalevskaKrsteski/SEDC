@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced JS Homework #6</title>
+</head>
+
+<body>
+    <h1>Advanced JS Homework #6</h1><br />
+
+    <form id="myForm">
+        <label for="filterType">Choose a type:</label>
+        <select name="filterType" id="filterType">
+            <option value="all">All</option>
+            <option value="Convertible">Convertible</option>
+            <option value="Coupe">Coupe</option>
+            <option value="Hatchback">Hatchback</option>
+            <option value="Sedan">Sedan</option>
+            <option value="SUV">SUV</option>
+            <option value="Truck">Truck</option>
+        </select>
+        
+        <label for="filterBrand">Choose a brand:</label>
+        <select name="filterBrand" id="filterBrand">
+            <option value="all">All</option>
+            <option value="Audi">Audi</option>
+            <option value="BMW">BMW</option>
+            <option value="Chevrolet">Chevrolet</option>
+            <option value="Fiat">Fiat</option>
+            <option value="Ford">Ford</option>
+            <option value="Honda">Honda</option>
+            <option value="Hyundai">Hyundai</option>
+            <option value="Kia">Kia</option>
+            <option value="Mazda">Mazda</option>
+            <option value="Mercedes-Benz">Mercedes-Benz</option>
+            <option value="Nissan">Nissan</option>
+            <option value="Ram">Ram</option>
+            <option value="Subaru">Subaru</option>
+            <option value="Toyota">Toyota</option>
+            <option value="Volkswagen">Volkswagen</option>
+        </select>
+
+        <br /><br />
+
+        <label for="model">Enter model:</label>
+        <input type="text" id="model" name="model" />
+
+        <br /><br />
+
+        <label for="doors">Number of doors (between 2 and 5):</label>
+        <input type="number" id="doors" name="doors" min="2" max="5" />
+        
+        <label for="horsepower">Horsepower:</label>
+        <input type="number" id="horsepower" name="horsepower" min="80" max="300" />
+        
+        <br /><br />
+
+        <label for="gasType">Gas type:</label>
+        <select name="gasType" id="gasType">
+            <option value="all">All</option>
+            <option value="Diesel">Diesel</option>
+            <option value="Electric">Electric</option>
+            <option value="Gasoline">Gasoline</option>
+            <option value="Hybrid">Hybrid</option>
+            <option value="Petrol">Petrol</option> 
+        </select>
+
+        <label for="color">Color:</label>
+        <select name="color" id="color">
+            <option value="all">All</option>
+            <option value="Black">Black</option>
+            <option value="Blue">Blue</option>
+            <option value="Gray">Gray</option>
+            <option value="Green">Green</option>
+            <option value="Orange">Orange</option> 
+            <option value="Purple">Purple</option>
+            <option value="Red">Red</option>
+            <option value="Silver">Silver</option>
+            <option value="White">White</option>
+            <option value="Yellow">Yellow</option> 
+        </select>    
+
+        <input type="radio" name="is_new" value="all" checked>
+        <label for="all">All</label>
+        <input type="radio" name="is_new" value="true">
+        <label for="true">New</label>
+        <input type="radio" name="is_new" value="false">
+        <label for="false">Old</label>
+    </form>
+    <br /><br />
+
+    <button id="filterBtn">Filter</button>
+    <button onClick="window.location.reload();">Reset Filters</button>
+
+    <br /><br />
+
+    <table border="1px">
+        <thead>
+            <tr>
+                <th>Type</th>
+                <th>Brand</th>
+                <th>Model</th>
+                <th>Doors</th>
+                <th>Gas Type</th>
+                <th>Color</th>
+                <th>Is New</th>
+                <th>Horsepower</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+    <script src="app.js"></script>
+</body>
+
+</html>
